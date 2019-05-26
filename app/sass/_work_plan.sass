@@ -1,0 +1,29 @@
+.work-plan-items
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto))
+  grid-gap: 1em
+  align-items: flex-start
+  margin-bottom: 145px
+
+  span
+    font-family: "SF UI Display Heavy",sans-serif
+    font-size: 120px
+    color: $big-numbers
+
+.work-plan-item-head
+  font-family: "SF UI Display Semibold",sans-serif
+  font-size: 24px
+  color: $link-color-grey
+  max-width: 65%
+  line-height: 40px
+  &:after
+    content: ''
+    width: 50px
+    display: block
+    border: 1px solid $big-numbers
+    margin: 20px 0
+
+
+.work-plan-item-description
+  font-family: "SF UI Regular",sans-serif
+  font-size: 16px
