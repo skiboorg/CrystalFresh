@@ -1,0 +1,60 @@
+.is-visible
+  display: block !important
+
+.mobile-menu-button
+  font-size: 30px
+  display: none
+
+.menu-mobile-wrapper
+  background: #ffffff
+  box-shadow: 0 4px 9px 0 #b8bbc3
+  border-radius: 5px
+  height: 210px
+  width: 96%
+  display: none
+  margin-bottom: 20px
+  position: absolute
+
+.menu-mobile-inner
+  padding: 20px
+  ul
+    li
+      margin-bottom: 10px
+      a
+        font-family: "SF UI Regular",sans-serif
+        font-size: 16px
+        color: $link-color-grey
+        text-decoration: none
+
+@media screen and  (max-width: 768px)
+  .header-inner
+    nav
+      display: none
+  .offer
+    background: #f9fafc
+    height: 456px
+    margin-bottom: 0
+  .offer-inner
+    max-width: 100%
+    padding: 30px 0
+    text-align: center
+  .delivery
+    background: #f9fafc
+    height: 285px
+    padding: 30px 0
+
+  .delivery-text
+    display: block
+    text-align: center
+
+  .mobile-menu-button
+    display: block
+  .header-inner
+    justify-content: space-between
+  .phones
+    flex-basis: 70%
+
+@media screen and  (max-width: 425px)
+
+  .phones
+    display: none

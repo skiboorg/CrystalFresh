@@ -28,11 +28,26 @@
             </nav>
             <div class="phones">
                 <p>8 800 000 00 00</p>
-                <span>Заказать звонок</span>
+                <span onclick="showmodal();">Заказать звонок</span>
             </div>
-
+            <div id="mobile-button" class="mobile-menu-button"><span>&#9776;</span></div>
         </div>
 
+
+         <div id="menu-mobile" class="menu-mobile-wrapper">
+             <div class="menu-mobile-inner">
+                    <ul>
+
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Технология</a></li>
+                    <li><a href="#">До/После</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вызвать курьера</a></li>
+                    </ul>
+             </div>
+
+         </div>
     </div>
 
 </header>
@@ -42,7 +57,7 @@
             <div class="offer-text">
                 <h1>Вернём твою<br>обувь в идеальное<br>состояние</h1>
                 <p>Компания с лушчими экспертами представляющая услуги наивысшего качества по разумной цене</p>
-                <button class="btn">Заказать услугу <span>&#10132;</span></button>
+                <button onclick="showmodal();" class="btn">Заказать услугу <span>&#10132;</span></button>
             </div>
 
 
@@ -107,11 +122,25 @@
     <div class="container">
         <h3 class="heading">Результат нашей работы</h3>
         <div class="slider ">
-            <div>
-                <img src="img/slide1.jpg"  alt=""/>
+            <div class="slide">
+                <div class="slide-img">
+                    <img src="img/slide1-1.jpg"  alt=""/>
+                     <img src="img/slide1-2.jpg"  alt=""/>
+                </div>
+                <div class="slide-text">
+                    sadsadsad
+                </div>
+
             </div>
-            <div>
-                <img src="img/slide1.jpg" alt="" />
+              <div class="slide">
+                <div class="slide-img">
+                    <img src="img/slide1-1.jpg"  alt=""/>
+                     <img src="img/slide1-2.jpg"  alt=""/>
+                </div>
+                <div class="slide-text">
+                    sadsadsad
+                </div>
+
             </div>
 
         </div>
@@ -130,7 +159,7 @@
                     Бесплатная курьерская<br>доставка
                  </h3>
                 <p>Нет времени приехать?</p>
-                 <button class="btn">Заказать услугу <span>&#10132;</span></button>
+                 <button onclick="showmodal();" class="btn">Вызвать курьера<span>&#10132;</span></button>
             </div>
 
 
@@ -138,12 +167,74 @@
 
     </div>
 </section>
-<footer>
+<section class="contact">
+    <div class="container">
+        <div class="contact-inner">
+            <div class="contact-inner-text">
+                <div class="contact-inner-text-item">
+                    <img src="img/pin.png" alt="">
+                    <div>
+                    <span>Наш адрес:</span>
+                    <p>Челябинск, улица, дом</p>
+                    </div>
+                </div>
+                 <div class="contact-inner-text-item">
+                    <img src="img/phone.png" alt="">
+                    <div>
+                    <span>Телефон:</span>
+                    <p>8 800 100 22 33</p>
+                    </div>
+                </div>
+                 <div class="contact-inner-text-item">
+                    <img src="img/mail.png" alt="">
+                    <div>
+                    <span>E-Mail:</span>
+                    <p>email@email.ru</p>
+                    </div>
+                </div>
+                  <button onclick="showmodal();" class="btn">Заказать звонок <span>&#10132;</span></button>
+
+            </div>
+            <div class="contact-inner-map">
+                <img src="img/map.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="">
+                <span>2019</span>
+            </div>
+            <div class="footer-menu-wrapper">
+                 <div class="footer-menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Технология</a></li>
+                    <li><a href="#">До/После</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вызвать курьера</a></li>
+                </ul>
 
 
+            </div>
+            <div class="footer-social">
+                <a href="#"> <img src="img/inst-icon.png" alt=""></a>
+                <a href="#"> <img src="img/vk-icon.png" alt=""></a>
+                <a href="#">  <img src="img/wa-icon.png" alt=""></a>
 
+            </div>
+            </div>
+
+
+        </div>
+
+    </div>
 </footer>
-<!--iv id="myModal" class="modal">
+<div id="myModal" class="modal">
 
 
   <div class="modal-content">
@@ -153,15 +244,17 @@
  <div class="modal-form offer-form-wrapper">
 
                 <div class="offer-form-inner">
-                    <div class="modal-header"> <h3>Узнайте точную стоимость дома</h3> <span class="close">&times;</span></div>
+                    <div class="modal-header">
+                        <h3>Заказ обратного звонка</h3> <span class="close">&times;</span>
+                    </div>
 
 
-                    <p>Заполните форму и мы сами перезвоним вам <span>через 15 секунд</span></p>
+
 
                     <form class="header-call-back-form">
                         <input type="text" class="custom-input" name="client-name" placeholder="Как к Вам обращаться?">
                         <input type="text" class="custom-input" name="client-phone" placeholder="Ваш сотовый номер">
-                        <button type="submit" class="form-submit">Узнать стоимость</button>
+                        <button  type="submit" class="btn">Узнать стоимость</button>
                         <p>Нажимая на кнопку, вы принимаете <a href="#">условия передачи данных</a></p>
                     </form>
                 </div>
@@ -172,10 +265,11 @@
 
   </div>
 <script defer src="js/main.js"></script>
-</div-->
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script src="js/main.js"></script>
 
 <script>
     $('.slider').slick({
@@ -186,7 +280,8 @@
         infinite: true,
         cssEase: 'linear',
         variableWidth: true,
-        variableHeight: true
+        variableHeight: true,
+        centerPadding: '10%'
     });
 </script>
 
