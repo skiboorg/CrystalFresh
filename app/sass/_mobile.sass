@@ -25,8 +25,26 @@
         font-size: 16px
         color: $link-color-grey
         text-decoration: none
+@media screen and  (max-width: 1440px)
+  .slider-bg
+    width: 845px
+  .services-slider
+    margin-left: 0
+
+@media screen and  (max-width: 1024px)
+  .slide-img
+    grid-gap: 0
+  .services-text
+    margin-right: 30px
+  .slider-bg
+    width: 720px
+
 
 @media screen and  (max-width: 768px)
+  .services-text
+    display: none
+  .slider-bg
+    width: 752px
   .header-inner
     nav
       display: none
@@ -40,8 +58,9 @@
     text-align: center
   .delivery
     background: #f9fafc
-    height: 285px
+    height: 340px
     padding: 30px 0
+    margin-bottom: 20px
 
   .delivery-text
     display: block
@@ -53,8 +72,45 @@
     justify-content: space-between
   .phones
     flex-basis: 70%
+  .slide-img
+    grid-gap: 126px
+  .slick-slide img
+    width: 320px
 
 @media screen and  (max-width: 425px)
-
+  .services
+    margin-bottom: 40px
+  .services-slider
+    display: none
+  .services-text
+    margin: 0
+    display: block
+    text-align: center
+    padding: 30px 0
+  .services-wrapper
+    padding: 0 15px
+  .services-inner
+    padding: 0
+  .footer-menu
+    display: none
+  .results
+    margin-bottom: 40px
   .phones
     display: none
+  .contact
+    margin-bottom: 40px
+  .contact-inner-map
+    margin-top: 40px
+
+  .contact-inner
+    flex-direction: column
+
+  .slick-slide img
+    width: 400px
+  .slide-img
+    grid-gap: 0
+    grid-template-columns: 1fr
+
+@media screen and  (max-width: 320px)
+  .slick-slide img
+    width: 310px

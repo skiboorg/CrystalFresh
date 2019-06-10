@@ -118,8 +118,45 @@
     </div>
 
 </section>
-<section style="margin-bottom: 158px" class="results">
-    <div class="container">
+
+<section class="services">
+
+    <div class="services-wrapper">
+
+        <div class="services-inner">
+              <div class="services-text">
+                        <h3>Услуги</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ducimus eius unde voluptate voluptatem. Aliquam assumenda aut dicta non, odit optio quae quibusdam rem sapiente sint tempora totam vel vero.</p>
+                        <button onclick="showmodal();" class="btn">Заказать услугу <span>&#10132;</span></button>
+                    </div>
+            <div class="services-image" >
+                 <a href="#" onclick="return false;">
+                    <div class="slider-bg" style="background-image: url('img/slide1.jpg')">
+                           <div class="overlay-content">
+
+                            <h3>Внешняя чистка</h3>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+</section>
+
+<section  class="results">
+    <div  class="container">
         <h3 class="heading">Результат нашей работы</h3>
         <div class="slider ">
             <div class="slide">
@@ -128,20 +165,23 @@
                      <img src="img/slide1-2.jpg"  alt=""/>
                 </div>
                 <div class="slide-text">
-                    sadsadsad
+                    <h4>Название название</h4>
+                    <p>Тип чистки: <span>Premium</span> </p>
+                    <span>1990 Р</span>
                 </div>
-
-            </div>
-              <div class="slide">
+            </div><!-- конец слайд-->
+            <div class="slide">
                 <div class="slide-img">
                     <img src="img/slide1-1.jpg"  alt=""/>
                      <img src="img/slide1-2.jpg"  alt=""/>
                 </div>
                 <div class="slide-text">
-                    sadsadsad
+                    <h4>Название название</h4>
+                    <p>Тип чистки: <span>Premium</span> </p>
+                    <span>1990 Р</span>
                 </div>
+            </div><!-- конец слайд-->
 
-            </div>
 
         </div>
 
@@ -264,7 +304,7 @@
 
 
   </div>
-<script defer src="js/main.js"></script>
+
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
@@ -274,6 +314,7 @@
 <script>
     $('.slider').slick({
         centerMode:true,
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
@@ -283,6 +324,7 @@
         variableHeight: true,
         centerPadding: '10%'
     });
+
 </script>
 
 </body>
