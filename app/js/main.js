@@ -25,3 +25,35 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+let curSlide=1
+
+let slides = {
+    slide1: {
+    img: 'img/slide1-1.jpg',
+    header: 'test',
+    text: 'test'
+  },
+       slide2: {
+    img: 'img/slide1-1.jpg',
+    header: 'test',
+    text: 'test'
+  }
+}
+
+
+function prevSlide() {
+
+}
+
+function nextSlide() {
+    let overlayHeader = document.getElementById("overlay-header");
+    let overlayText = document.getElementById("overlay-text");
+    overlayHeader.innerHTML=slides['slide'+curSlide].header
+    console.log(slides['slide'+curSlide])
+
+
+
+    return false
+
+}

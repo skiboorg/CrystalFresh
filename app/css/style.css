@@ -413,6 +413,21 @@ nav {
 .services-slider {
   margin-left: 100px; }
 
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .arrows a {
+    color: rgba(255, 255, 255, 0.69);
+    text-decoration: none;
+    opacity: .8%;
+    font-size: 20px; }
+    .arrows a:hover {
+      color: #ffffff; }
+
 .delivery {
   background: url("../img/delivery-bg.jpg") no-repeat;
   height: 508px;
